@@ -2,9 +2,9 @@ class Calculator
 {
     public static void main(String[] args)
     {
-        int a=10;
-        int b=20;
-        int choice = '+';
+        int a = 10;
+        int b = 20;
+        char choice = '+';
 
         switch(choice)
         {
@@ -20,7 +20,6 @@ class Calculator
             case '/':
                 System.out.println(a/b);
                 break;
-            
         }
     }
 }
