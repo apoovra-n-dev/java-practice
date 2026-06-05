@@ -1,16 +1,23 @@
-/* wap to find the sum of all the elements in an array */
 
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*How to copy ArrayList to array? */
 public class p1 {
 	
 	public static void main(String[] args) {
-		int[] arr= {10,20,30,40,50};
-		int sum=0;
-		for(int i=0;i<arr.length;i++)
-		{
-			sum+=arr[i];
+		List<Integer> a=new ArrayList<>();
+		a.add(100);
+		a.add(200);
+		System.out.println(a);
+	
+		Integer[] arr = a.toArray(new Integer[0]);
+
+		for(Integer lv:arr) {
+			System.out.println(lv);
 		}
-		System.out.println("sum="+sum);
 	}
+		
 
 }
-
